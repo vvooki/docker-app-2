@@ -1,0 +1,714 @@
+    1  exit 
+    2  passwd 
+    3  docker 
+    4  docker ps 
+    5  screen 
+    6  screen -S kurs
+    7  screen -x kurs
+    8  exit
+    9  screen -x kurs
+   10  echo 'Lukasz'
+   11  echo Lukasz
+   12  screen
+   13  csreen -ls
+   14  sreen -ls
+   15  screen -ls
+   16  screen -r 1024
+   17  screen -r 1024.kurs
+   18  exit
+   19  echo Darek
+   20  echo "Darek"
+   21  pwd
+   22  exit
+   23  echo "Marcin"
+   24  echo "Darek"
+   25  echo "Lukasz"
+   26  docker 
+   27  docker images 
+   28  docker pull nginx
+   29  docker login 
+   30  docker pull nginx
+   31  docker search apache
+   32  docker search httpd
+   33  docker search httpd:
+   34  docker images 
+   35  docker rmi nginx:latest 
+   36  docker images 
+   37  docker run hello-world
+   38  docker images 
+   39  docker run nginx
+   40  docker run -d nginx
+   41  docker ps 
+   42  docker ps -a
+   43  docker exec -it jovial_haslett bash
+   44  curl vps1.m89.pl
+   45  docker ps 
+   46  docker stop jovial_haslett 
+   47  docker run -d -p "8080:80" nginx
+   48  curl vps1.m89.pl:8080
+   49  docker exec -it
+   50  docker exec -it admiring_dewdney bash
+   51  curl vps1.m89.pl:8080
+   52  docker stop admiring_dewdney 
+   53  ls 
+   54  pwd
+   55  mkdir ngx
+   56  cd ngx/
+   57  ls 
+   58  mkdir app
+   59  echo "Tajna Apka" > app/index.html
+   60  docker run -d -p "80:80" -v "./app:/usr/share/nginx/html" nginx
+   61  curl vps1.m89.pl
+   62  ls 
+   63  nano index.html 
+   64  curl vps1.m89.pl
+   65  cat ~/.bash_history 
+   66  echo MArcin 
+   67  echo Lukasz
+   68  ls 
+   69  cat index.html 
+   70  cd ..
+   71  ls 
+   72  cd ..
+   73  ls 
+   74  tree 
+   75  sudo apt install tree 
+   76  cd ngx/
+   77  tree 
+   78  jetsem
+   79  who
+   80  screen -ls 
+   81  docker run -d -p "80:80" -v "./app:/usr/share/nginx/html" -v "/usr/share/nginx/html/vendorex" nginx
+   82  docker ps
+   83  docker stop dazzling_matsumoto 
+   84  docker ps
+   85  docker run -d -p "80:80" -v "./app:/usr/share/nginx/html" nginx:latest 
+   86  docker ps 
+   87  curl localhost
+   88  curl vps1.m89.pl
+   89  docker run -i -t ubuntu bash
+   90  docker ps 
+   91  docker run -d ubuntu
+   92  docker ps 
+   93  docker ps -a 
+   94  docker exec -it sharp_lederberg bash
+   95  docker run -it ubuntu bash -v "./app:/app"
+   96  ls 
+   97  docker run -it -v "./app:/app" ubuntu bash
+   98  curl localhost 
+   99  ls 
+  100  nano app/index.html 
+  101  docker ps -a
+  102  docker ps 
+  103  docker ps -a 
+  104  docker rm 7c4f9c75cf71
+  105  docker stop sharp_lederberg
+  106  docker stop 
+  107  docker stop $(docker ps -q)
+  108  docker ps -q
+  109  docker ps -qa
+  110  docker rm $(docker ps -q)
+  111  ls 
+  112  docker ps 
+  113  docker ps -a 
+  114  docker rm $(docker ps -qa)
+  115  docker ps -a 
+  116  docker logs 
+  117  docker image 
+  118  docker logs ls 
+  119  docker image ls 
+  120  docker network ls 
+  121  docker 
+  122  cd /var/lib/docker/
+  123  sudo su - 
+  124  docker container 
+  125  docker container ps 
+  126  docker container prune 
+  127  docker imagege ls 
+  128  docker image ps 
+  129  docker images ps 
+  130  docker images ps -a 
+  131  docker images 
+  132  docker images ls 
+  133  docker images
+  134  docker run nginx 
+  135  docker run nginx -d 
+  136  docker run -d nginx 
+  137  docker ps 
+  138  docker images 
+  139  docker image prune 
+  140  docker images 
+  141  docker image prune -f 
+  142  docker images 
+  143  docker images prune -f 
+  144  docker images prune 
+  145  docker image prune 
+  146  docker ps -a 
+  147  docker system prune 
+  148  docker images 
+  149  docker system prune -f 
+  150  docker system prune 
+  151  docker images 
+  152  docker volume 
+  153  docker volume ls 
+  154  docker volume create volumen_testowy
+  155  docker volume ls 
+  156  ls 
+  157  docker run -d -v "volumen_testowy:/test" nginx   
+  158  docker run -it -v "volumen_testowy:/test" nginx
+  159  docker run -it -v "volumen_testowy:/test" nginx bash
+  160  docker ps 
+  161  docker exec -it compassionate_einstein bash
+  162  docker exec -it frosty_snyder 
+  163  docker exec -it frosty_snyder bash
+  164  docker stop frosty_snyder 
+  165  sudo su - 
+  166  ls 
+  167  tree 
+  168  rm app/vendorex/
+  169  rmdir app/vendorex/
+  170  tree 
+  171  nano docker-compose.yml
+  172  docker compose up 
+  173  docker compose up -d 
+  174  curl localhost 
+  175  ls 
+  176  git status 
+  177  nano docker-compose.yml 
+  178  docker compose up -d 
+  179  nano docker-compose.yml 
+  180  ls 
+  181  ls -la 
+  182  nano docker-compose.yml 
+  183  docker compose up -d 
+  184  curl localhost:8080
+  185  cd ..
+  186  pwd
+  187  cd ../..
+  188  cd 
+  189  mkdir php
+  190  cd php/
+  191  touch docker-compose.yml
+  192  nano docker-compose.yml 
+  193  cd ..
+  194  pwd
+  195  cd php/
+  196  mkdir php
+  197  mkdir nginx
+  198  cd nginx/
+  199  tou
+  200  touch default.conf
+  201  rm defaul.con 
+  202  nano default.conf 
+  203  cd ../php/
+  204  nano 
+  205  nano index.php 
+  206  cd ..
+  207  ls
+  208  docker compose up
+  209  docker ps
+  210  docker stop moj-nginx 
+  211  docker compose up
+  212  docker compose up -d
+  213  curl localhost:8080
+  214  ls
+  215  nano docker-compose.yml
+  216  docker compose up 
+  217  docker compose up -d
+  218  docker ps
+  219  nano docker-compose.yml
+  220  nano docker-compose.yml 
+  221  docker ps
+  222  nano docker-compose.yml 
+  223  mkdir mysql-int
+  224  rmdir mysql-int/
+  225  mkdir mysql-intit
+  226  rmdir mysql-intit/
+  227  mkdir mysql-init
+  228  cd mysql-init/
+  229  touch init.sql
+  230  nano init.sql 
+  231  cd ../php/
+  232  ls
+  233  vim index.php 
+  234  nano index.php
+  235  rmdir mysql-intit/cd ..
+  236  cd ..
+  237  docker compose up -d
+  238  nano docker-compose.yml 
+  239  docker compose up -d
+  240  nano docker-compose.yml 
+  241  docker compose up -d
+  242  curl localhost:8080
+  243  ls 
+  244  cat php/index.php 
+  245  nano php/index.php 
+  246  curl localhost:8080
+  247  nano php/index.php 
+  248  curl localhost:8080
+  249  ls -la 
+  250  nano Dockerfile
+  251  ls
+  252  tree 
+  253  mv php app
+  254  tree 
+  255  mkdir php
+  256  cd php
+  257  nano Dockerfile
+  258  cd ..
+  259  nano docker-compose.yml 
+  260  cat php/Dockerfile 
+  261  nano Dockerfile
+  262  cd ..
+  263  cd pph
+  264  cd php
+  265  pwd
+  266  tree
+  267  cd php
+  268  nano Dockerfile
+  269  tree
+  270  cd ..
+  271  tree 
+  272  cat php/Dockerfile 
+  273  cat docker-compose.yml 
+  274  nano docker-compose.yml 
+  275  docker compose up -d
+  276  tree
+  277  cd php
+  278  nano Dockerfile
+  279  docker compose up -d
+  280  curl localhost:8080
+  281  cd ..
+  282  nano docker-compose.yml 
+  283  docker compose up -d
+  284  curl localhost:8080
+  285  nano app/index.php 
+  286  curl localhost:8080
+  287  nano app/index.php 
+  288  curl localhost:8080
+  289  nano app/index.php 
+  290  nslookup db
+  291  nano docker-compose.yml 
+  292  [200~ssh-keygen -t ed25519 -C "vvooki99@gmail.com"
+  293  ssh-keygen -t ed25519 -C "vvooki99@gmail.com"
+  294  cat Â~/.ssh/id_ed25519.pub
+  295  cat ~/.ssh/id_ed25519.pub
+  296  ssh-keygen -t rsa -b 4096 -C "vvooki99@gmail.com"
+  297  cat ~/.ssh/id_rsa.pub
+  298  git remote add origin git@github.com:vvooki/docker-app.git
+  299  git init
+  300  git remote add origin git@github.com:vvooki/docker-app.git
+  301  git push origin main
+  302  git status
+  303  nano README.md
+  304  git add README.md
+  305  git commit -m "feat: add readme.md file"
+  306  git config --global --edit
+  307  git push origin main
+  308  git commit -m "feat: add readme.md file"
+  309  git history
+  310  git 
+  311  git log
+  312  git push origin main
+  313  git push origin master
+  314  git add .
+  315  git commit -m "feat: initialize app"
+  316  git push origin master
+  317  mc 
+  318  sudo apt install mc 
+  319  ls 
+  320  mc 
+  321  ls 
+  322  cd ../.ssh/
+  323  ls 
+  324  mv id_rsa id_rsa_lukasz
+  325  mv id_rsa.pub id_rsa_lukasz.pub 
+  326  ls 
+  327  screen -x kurs
+  328  echo "Lukasz"
+  329  jestem
+  330  ls 
+  331  mkdir git 
+  332  cd git/
+  333  ls
+  334  git init 
+  335  tree
+  336  ls -la 
+  337  cd .git/
+  338  ls 
+  339  ls -la 
+  340  ls branches/
+  341  cat HEAD 
+  342  ls -la
+  343  ls -la branches/
+  344  cat config 
+  345  cat description
+  346  ls hooks/
+  347  ls 
+  348  cat info/
+  349  ls info/
+  350  ls info/exclude 
+  351  ls 
+  352  ls objects/
+  353  ls objects/info/
+  354  ls objects/pack/
+  355  ls refs/
+  356  ls refs/heads/
+  357  ls refs/tags/
+  358  cd ..
+  359  ls 
+  360  git status 
+  361  nano README.md
+  362  ls 
+  363  git add README.md 
+  364  git status 
+  365  git commit -m "init commit'
+"
+  366  git status 
+  367  ls 
+  368  git log 
+  369  git config --global 
+  370  git config --global edit 
+  371  git config --global user.name="Marcin"
+  372  git config --global user_name="Marcin"
+  373  git log 
+  374  git config --global user.name "Marcin"
+  375* git config --global user.email "marcin@m89.pl"r
+  376  nano README.md 
+  377  git status 
+  378  git add README.md 
+  379  git commit 
+  380  git status 
+  381  git log 
+  382  git branch 
+  383  git checkout -b nowy_feature
+  384  git branch 
+  385  ls 
+  386  mkdir app
+  387  ls 
+  388  tree 
+  389  git status 
+  390  touch app/.gitkeep
+  391  git status 
+  392  git add app/
+  393  git status 
+  394  git commit -m "added .gitkeep"
+  395  git log 
+  396  git branch 
+  397  nano app/index.html
+  398  ls 
+  399  git status 
+  400  git add index.html 
+  401  git add app/index.html 
+  402  git commit -m "added index.html"
+  403  git log 
+  404  git branch 
+  405  git switch master 
+  406  git merge nowy_feature 
+  407  ls 
+  408  git checkout -b test
+  409  git branch 
+  410  ls 
+  411  touch testowy.txt
+  412  ls 
+  413  tree 
+  414  git add testowy.txt 
+  415  git commit -m "added testowy" 
+  416  ls 
+  417  git switch master 
+  418  ls 
+  419  ssh-keygen -t rsa -b 4096 -C "marak89@marak89.com"
+  420  cat ~/.ssh/id_rsa.pub 
+  421  git remote add origin git@github.com:marak89/kurs_2649597.git
+  422  git push -u origin master
+  423  cd ..
+  424  ls 
+  425  mkdir test 
+  426  cd test/
+  427  ls 
+  428  git clone https://github.com/marak89/kurs_2649597
+  429  mkdir t est 
+  430  ls 
+  431  cd t/
+  432  ls 
+  433  git clone git@github.com:marak89/kurs_2649597.git
+  434  ssh -T git@github.com
+  435  cd ..
+  436  ls 
+  437  cd git/
+  438  ls 
+  439  mv app/index.html 
+  440  mv app/index.html app/index.html app/index.php
+  441  mv app/index.html app/index.php
+  442  ls
+  443  tree
+  444  mkdir mysql-init
+  445  cd mysql-init/
+  446  nano init.sql
+  447  cd ..
+  448  git status
+  449  ls
+  450  cd mysql-init/
+  451  ls
+  452  git add app/index.php
+  453  cd ..
+  454  git add app/index.php
+  455  git commit -m "added index.php"
+  456  git add mysql-init/
+  457  git commit -m "added db initializer"
+  458  git status
+  459  git rm app/index.html
+  460  git commit -m "remove index.html"
+  461  git status
+  462  ls
+  463  mkdir php
+  464  cd php/
+  465  cd ..
+  466  mkdir nginx
+  467  cd nginx/
+  468  touch nginx.conf
+  469  vim nginx.conf 
+  470  nano nginx.conf 
+  471  cd ..
+  472  git add nginx/nginx.conf -m "dodano confa"
+  473  git add nginx/nginx.conf 
+  474  git commit -m "dodano conf nginx" 
+  475  git status
+  476  git log
+  477  tree
+  478  cd app/
+  479  nano index.php 
+  480  git add index.php 
+  481  git commit -m "zmiana index.php" 
+  482  tig
+  483  ls
+  484  cd ..
+  485  tree
+  486  touch docker-compose.yml
+  487  nano docker-compose.yml 
+  488  tree
+  489  nano docker-compose.yml 
+  490  docker compose
+  491  history 
+  492  history | grep compose 
+  493  docker compose up -d
+  494  tree
+  495  cd php
+  496  nano Dockerfile
+  497  cd ..
+  498  tree
+  499  nano docker-compose.yml
+  500  git status
+  501  git add .
+  502  git status
+  503  git commit -m "added docker-compose and Dockerfile for php"
+  504  git status
+  505  docker compose up -d
+  506  \dokcer ps
+  507  dokcer ps
+  508  docker ps
+  509  history | grep docker
+  510  history | grep docker | less
+  511  docker ps
+  512  docker inspect c87
+  513  docker inspect c87 | less
+  514  docker inspect c87 | grep home | less
+  515  pwd
+  516  cd ..
+  517  tree
+  518  cd php
+  519  tree
+  520  docker compose down
+  521  docker ps
+  522  docker stop compassionate_einstein 
+  523  docker ps
+  524  cd ..
+  525  tree
+  526  cd git
+  527  tree
+  528  docker compose up -d 
+  529  nano docker-compose.yml 
+  530  tree
+  531  nano docker-compose.yml 
+  532  docker compose up -d 
+  533  docker compose log
+  534  docker compose logs
+  535  docker compose logs|less
+  536  docker compose exec -it db
+  537  docker compose exec -it db bash
+  538  docker ps
+  539  nano docker-compose.yml 
+  540  docker compose up -d 
+  541  docker compose build
+  542  docker compose up -d 
+  543  docker ps -a
+  544  docker container prune
+  545  docker ps -a
+  546  docker container prune
+  547  docker ps -a
+  548  docker compose up -d 
+  549  docker ps -a
+  550  docker logs 1a5
+  551  docker logs 1a5 | entrypoint
+  552  ls
+  553  nano docker-compose.yml 
+  554  docker compose up -d 
+  555  nano docker-compose.yml 
+  556  docker compose up -d 
+  557  nano docker-compose.yml 
+  558  docker compose up -d 
+  559  curl localhost:8080
+  560  docker compose ps
+  561  nano docker-compose.yml 
+  562  tree
+  563  ecls 
+  564  ls 
+  565  echo "" > docker-compose.yml 
+  566  nano docker-compose.yml 
+  567  cd nginx/
+  568  nano nginx.conf
+  569  docker compose up -d
+  570  curl localhost:8080
+  571  nano nginx.conf
+  572  cd ..
+  573  tree
+  574  cd app
+  575  nano index.html
+  576  cd ..
+  577  docker compose up -d
+  578  curl localhost:8080
+  579  docker ps -a
+  580  docker ps
+  581  ls -la
+  582  cd app/index.php
+  583  cd app
+  584  nano index.php
+  585  docker compose up -d
+  586  docker compose down --remove-orphans
+  587  docker compose up -d
+  588  curl localhost:8080
+  589  docker compose logs -f 
+  590  cd app
+  591  cd ..
+  592  ls
+  593  cd app/
+  594  ls -la
+  595  docker ps -a
+  596  docker exec -it bec
+  597  docker exec -it becf bash
+  598  cd ..
+  599  nano docker-compose.yml 
+  600  docker compose up -d
+  601  curl localhost:8080
+  602  nano docker-compose.yml 
+  603  docker compose up -d
+  604  curl localhost:8080
+  605  nano docker-compose.yml 
+  606  docker compose up -d
+  607  curl localhost:8080
+  608  git status
+  609  git add .
+  610  git commit -m "fixed configuration"
+  611  git status
+  612  git push
+  613  git status
+  614  tree
+  615  mkdir mysql
+  616  cd mysql
+  617  nano Dockerfile
+  618  cat ../docker-compose.yml 
+  619  nano Dockerfile
+  620  cd ..
+  621  nano docker-compose.yml 
+  622  docker compose --build
+  623  docker compose up --build
+  624  nano docker-compose.yml 
+  625  tree
+  626  cd php
+  627  nano Dockerfile
+  628  cd ..
+  629  nano docker-compose.yml 
+  630  docker compose up --build
+  631  tree
+  632  cat mysql/Dockerfile 
+  633  cat php/Dockerfile 
+  634  cd php
+  635  nano Dockerfile 
+  636  cd ..
+  637  docker compose up --build
+  638  docker ps
+  639  cd php
+  640  nano Dockerfile 
+  641  cd ..
+  642  docker compose up --build
+  643  cd php
+  644  nano Dockerfile 
+  645  cd ..
+  646  docker compose up --build
+  647  nano php/Dockerfile 
+  648  docker compose --build
+  649  docker compose up --build
+  650  nano php/Dockerfile 
+  651  docker compose up --build
+  652  nano php/Dockerfile 
+  653  nano docker-compose.yml 
+  654  tree
+  655  docker compose up --build
+  656  cd php
+  657  nano Dockerfile 
+  658  docker compose up --build
+  659  nano Dockerfile 
+  660  docker compose up --build
+  661  cd ../
+  662  cat mysql/Dockerfile 
+  663  ls
+  664  cd php
+  665  nano Dockerfile 
+  666  docker compose up --build
+  667  cat Dockerfile 
+  668  cat ../mysql/Dockerfile 
+  669  nano Dockerfile 
+  670  docker compose up --build
+  671  nano Dockerfile 
+  672  cd ..
+  673  nano mysql/Dockerfile 
+  674  docker compose up --build
+  675  ls
+  676  ls -la 
+  677  docker build -t mysql1 -f mysql/Dockerfile 
+  678  docker build -t mysql1 -f mysql/Dockerfile .
+  679  docker build -t mysql1 -f php/Dockerfile .
+  680  nano docker-compose.yml 
+  681  cat docker-compose.yml 
+  682  nano docker-compose.yml 
+  683  docker compose up --build 
+  684  nano docker-compose.yml 
+  685  docker compose up --build 
+  686  nano docker-compose.yml 
+  687  pwd
+  688  mkdri nginx
+  689  mkdir nginx
+  690  cd nginx/
+  691  touch Dokerfile
+  692  nano Dokerfile 
+  693  tree
+  694  nano Dokerfile 
+  695  tree
+  696  cd ..
+  697  tree
+  698  docker compose up --build 
+  699  nano docker-compose.yml 
+  700  docker compose up -d
+  701  curl localhost:8080
+  702  docker exec -it nginx bash
+  703  nano docker-compose.yml 
+  704  docker compose up -d
+  705  nano docker-compose.yml 
+  706  docker compose up -d
+  707  nano docker-compose.yml 
+  708  yamllint docker-compose.yml 
+  709  nano docker-compose.yml 
+  710  docker compose up -d
+  711  yamllint docker-compose.yml 
+  712  nano docker-compose.yml 
+  713  history > hist1.txt

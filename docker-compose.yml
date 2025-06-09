@@ -1,35 +1,42 @@
 services:
   nginx:
-    image: nginx:latest
+    build:
+      context: .
+      dockerfile: ./nginx/Dockerfile
+#  image: nginx:latest
     container_name: nginx
     ports:
       - "8080:80"
-    volumes:
-      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
-      - ./app:/var/www/html
+#    volumes:
+#      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+#      - ./app:/var/www/html
     depends_on:
       - php
     networks:
       - backend
 
   php:
-    build: ./php
+    build:
+      context: .
+      dockerfile: ./php/Dockerfile
     container_name: php
-    volumes:
-      - ./app:/var/www/html
+    # volumes:
+    # - ./app:/var/www/html
     networks:
       - backend
 
   db:
-    image: mysql:8.0
+    build:
+      context: .
+      dockerfile: ./mysql/Dockerfile
     container_name: mysql-db
     environment:
       MYSQL_ROOT_PASSWORD: rootpass
       MYSQL_DATABASE: testdb
       MYSQL_USER: testuser
       MYSQL_PASSWORD: testpass
-    volumes:
-      - ./mysql-init:/docker-entrypoint-initdb.d
+    # volumes:
+    #  - ./mysql-init:/docker-entrypoint-initdb.d
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
       interval: 10s
@@ -40,5 +47,5 @@ services:
 
 networks:
   backend:
-     name: app-network
-     driver: bridge
+    name: app-network
+    driver: bridge
