@@ -71,6 +71,7 @@ jobs:
           password: ${{ secrets.VPS_PASSWORD }}
           source: "docker-compose-prod.yml"
           target: "~/deploy/"
+          debug: true
 
       - name: Run deployment on VPS
         uses: appleboy/ssh-action@v1.0.3
