@@ -63,6 +63,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: List workspace for debug
+        run: | echo "Biezacy katalog:\n"
+            pwd
+            echo "Zawartosc:\n"
+            ls -lah
+
       - name: Copy docker-compose to VPS
         uses: appleboy/scp-action@v0.1.4
         with:
