@@ -48,7 +48,7 @@ jobs:
             ${{ env.IMAGE_NAME }}-php:latest
             ${{ env.IMAGE_NAME }}-php:${{ steps.vars.outputs.TAG }}
 
-       - name: Build and push image sql
+      - name: Build and push image sql
         uses: docker/build-push-action@v5
         with:
           context: .
