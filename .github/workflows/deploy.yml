@@ -91,5 +91,5 @@ jobs:
           password: ${{ secrets.VPS_PASSWORD }}
           script: |
             cd ~/deploy
-            docker-compose -f docker-compose-prod.yml pull
-            docker-compose -f docker-compose-prod.yml up -d
+            docker compose -f docker-compose-prod.yml pull
+            docker compose -f docker-compose-prod.yml up -d
