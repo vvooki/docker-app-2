@@ -9,7 +9,7 @@ jobs:
   build-and-push:
     runs-on: ubuntu-latest
     env:
-      IMAGE_NAME: marak89/moja-aplikacja
+      IMAGE_NAME: vvooki/moja-aplikacja
 
     steps:
       - name: Checkout repo
