@@ -1,22 +1,22 @@
 services:
   nginx:
-    image: marak89/moja-aplikacja-nginx:latest
+    image: vvooki/moja-aplikacja-nginx:latest
     container_name: nginx
     ports:
-      - "8080:80"
+      - "8082:80"
     depends_on:
       - php
     networks:
       - backend
 
   php:
-    image: marak89/moja-aplikacja-php:latest
+    image: vvooki/moja-aplikacja-php:latest
     container_name: php
     networks:
       - backend
 
   db:
-    image: marak89/moja-aplikacja-sql:latest
+    image: vvooki/moja-aplikacja-sql:latest
     container_name: mysql-db
     environment:
       MYSQL_ROOT_PASSWORD: rootpass
