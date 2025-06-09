@@ -1,0 +1,37 @@
+services:
+  nginx:
+    image: marak89/apka-ng:latest
+    container_name: nginx
+    ports:
+      - "8080:80"
+    depends_on:
+      - php
+    networks:
+      - backend
+
+  php:
+    image: marak89/apka-ng-php:latest
+    container_name: php
+    networks:
+      - backend
+
+  db:
+    image: marak89/apka-ng-sql:latest
+    container_name: mysql-db
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: testdb
+      MYSQL_USER: testuser
+      MYSQL_PASSWORD: testpass
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - backend
+
+networks:
+  backend:
+    name: app-network
+    driver: bridge
