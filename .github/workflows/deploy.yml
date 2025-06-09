@@ -64,9 +64,10 @@ jobs:
 
     steps:
       - name: List workspace for debug
-        run: | echo "Biezacy katalog:\n"
+        run: |
+            echo "Biezacy katalog"
             pwd
-            echo "Zawartosc:\n"
+            echo "Zawartosc:"
             ls -lah
 
       - name: Copy docker-compose to VPS
