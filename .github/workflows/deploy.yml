@@ -85,6 +85,7 @@ jobs:
           password: ${{ secrets.VPS_PASSWORD }}   
           source: ".env"
           target: "~/${{ secrets.CONTAINER_NAME }}/.env" 
+          debug: true
 
       - name: Copy docker-compose to VPS
         uses: appleboy/scp-action@v0.1.4
