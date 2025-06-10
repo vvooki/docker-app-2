@@ -1,5 +1,7 @@
 services:
   nginx:
+    env_file:
+      - .env
     image: vvooki/moja-aplikacja-nginx:latest
     container_name: nginx-${CONTAINER_NAME}
     ports:
@@ -10,12 +12,16 @@ services:
       - backend
 
   php:
+    env_file:
+      - .env
     image: vvooki/moja-aplikacja-php:latest
     container_name: php-${CONTAINER_NAME}
     networks:
       - backend
 
   db:
+    env_file:
+      - .env
     image: vvooki/moja-aplikacja-sql:latest
     container_name: mysql-db-${CONTAINER_NAME}
     environment:
