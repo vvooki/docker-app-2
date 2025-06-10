@@ -86,7 +86,8 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           password: ${{ secrets.VPS_PASSWORD }}   
           source: ".env"
-          target: "~/${{ secrets.CONTAINER_NAME }}" 
+          target: "~/${{ secrets.CONTAINER_NAME }}/"
+          overwrite: true
           debug: true
 
       - name: Copy docker-compose to VPS
