@@ -73,6 +73,19 @@ jobs:
             echo "Zawartosc:"
             ls -lah
 
+      - name: Generate .env file
+        run: |
+          echo "CONTAINER_NAME=${{ secrets.CONTAINER_NAME }}" > .env
+
+      - name: Copy .env to remote host
+        uses: appleboy/scp-action@v0.1.1
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          password: ${{ secrets.VPS_PASSWORD }}   
+          source: ".env"
+          target: "/${{ secrets.CONTAINER_NAME }}/.env" 
+
       - name: Copy docker-compose to VPS
         uses: appleboy/scp-action@v0.1.4
         with:
@@ -80,7 +93,7 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           password: ${{ secrets.VPS_PASSWORD }}
           source: "docker-compose-prod.yml"
-          target: "~/deploy/"
+          target: "~/${{ secrets.CONTAINER_NAME }}/"
           debug: true
 
       - name: Run deployment on VPS
