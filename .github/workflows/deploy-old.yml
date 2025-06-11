@@ -86,7 +86,7 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           password: ${{ secrets.VPS_PASSWORD }}   
           source: ".env"
-          target: "~/app/lukasz/"
+          target: "~/${{ secrets.CONTAINER_NAME }}/"
           overwrite: true
           debug: true
 
@@ -96,8 +96,8 @@ jobs:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
           password: ${{ secrets.VPS_PASSWORD }}
-          source: "docker-compose-swarm.yml"
-          target: "~/app/lukasz/"
+          source: "docker-compose-prod.yml"
+          target: "~/${{ secrets.CONTAINER_NAME }}/"
           debug: true
 
       - name: Run deployment on VPS
@@ -107,5 +107,6 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           password: ${{ secrets.VPS_PASSWORD }}
           script: |
-            cd ~/app/lukasz
-            docker stack deploy -c docker-compose-swarm.yml apka-lukasz
+            cd ~/deploy
+            docker compose -f docker-compose-prod.yml pull
+            docker compose -f docker-compose-prod.yml up -d

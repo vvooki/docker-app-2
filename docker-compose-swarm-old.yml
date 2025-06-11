@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  nginx-config:
+    image: nginx:alpine
+    configs:
+      - source: custom_nginx_conf
+        target: /etc/nginx/nginx.conf
+    deploy:
+      replicas: 1
+      labels: 
+        - "traefik.enable=true"
+        - "traefik.http.routers.lukasz.rule=Host(`lukasz.vps1.m89.pl`)"
+        - "traefik.http.routers.lukasz.entrypoints=web"
+        - "traefik.http.services.lukasz.loadbalancer.server.port=80"
+    networks:
+      - web
+
+configs:
+  custom_nginx_conf:
+    file: ./nginx/nginx-swarm.conf
+
+networks:
+  web:
+    external: true
