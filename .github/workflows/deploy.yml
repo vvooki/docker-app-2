@@ -90,13 +90,15 @@ jobs:
           overwrite: true
           debug: true
 
-      - name: Copy docker-compose to VPS
+      - name: Copy config files and compose to VPS
         uses: appleboy/scp-action@v0.1.4
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
           password: ${{ secrets.VPS_PASSWORD }}
-          source: "docker-compose-swarm.yml"
+          source: |
+            docker-compose-swarm.yml
+            nginx/nginx-swarm.conf
           target: "~/app/lukasz/"
           debug: true
 
