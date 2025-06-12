@@ -8,6 +8,8 @@ services:
     configs:
       - source: custom_nginx_conf
         target: /etc/nginx/nginx.conf
+    volumes:
+      - app_data:/usr/share/nginx/html:ro
     deploy:
       replicas: 2
       restart_policy:
@@ -55,3 +57,6 @@ networks:
 secrets:
   secret_demo:
     file: ./secret.txt
+
+volumes:
+  app_data:
