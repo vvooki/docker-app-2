@@ -11,7 +11,7 @@ services:
     volumes:
       - app_data:/usr/share/nginx/html
     deploy:
-      replicas: 1
+      replicas: 2
       restart_policy:
         condition: any
       labels: 
