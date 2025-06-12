@@ -96,7 +96,7 @@ jobs:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
           password: ${{ secrets.VPS_PASSWORD }}
-          source: "docker-compose-swarm.yml,nginx/nginx-swarm.conf"
+          source: "docker-compose-swarm.yml,nginx/nginx-swarm.conf,secret.txt"
           target: "/app/lukasz/"
           debug: true
 
