@@ -9,7 +9,7 @@ services:
     deploy:
       replicas: 2
       restart_policy:
-        condition: on-failure
+        condition: any
       labels: 
         - "traefik.enable=true"
         - "traefik.http.routers.nginx.rule=Host(`lukasz.vps1.m89.pl`)" 
